@@ -48,7 +48,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WfIcaLib">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Citrix\ICA Client\WfIcaLib.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Citrix\ICA Client\WfIcaLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
@@ -106,7 +106,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files\7-Zip\7z.exe" a -tzip "$(ProjectDir)binary\CaffeineForCitrixWorkspace.zip" "$(TargetDir)" 
-</PostBuildEvent>
   </PropertyGroup>
 </Project>
